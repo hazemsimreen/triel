@@ -7,6 +7,11 @@ body{
 background-color: white;
 padding: 18px 0;
 }
+
+.header .menu {
+    display: none;
+}
+
 .header .logo {
     display: flex;
     align-items: center;
@@ -49,4 +54,25 @@ font-weight: 600;
 .buttons .Register{
 color: #fff;
 background-color: var(--mainColor); 
+}
+
+/* header media */
+
+@media screen and (max-width:992px){
+    .navbar,
+    .buttons{
+        display: none;
+    }
+    .header .menu{
+        display:block;
+      
+    }
+    
+}
+@media screen and (max-width:576px){
+    .container{
+        width: calc(100% - 60px);
+        
+        }
+    
 }
