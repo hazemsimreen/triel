@@ -1,4 +1,52 @@
 @import './base.css';
 body{
-    background-color: brown;
+  font-family: var(--mainFont);
+  background-color: hsl(0, 0%, 93%);
+}
+.header{
+background-color: white;
+padding: 18px 0;
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.header .logo img{
+    width: 35px;
+}
+.header .logo a{
+  color: var(--mainColor)
+}
+.navbar ul {
+    display: flex;  
+    gap: 40px;
+}
+
+.navbar ul li a {
+    color: #101928;
+}
+.active{
+    font-weight: 900;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+}
+.buttons a{
+   
+    font-family: var(--subfont);
+    border-radius: 9px;
+    padding: 10px 50px;
+    border: 1.5px solid var(--mainColor);
+}
+.buttons .login{
+color: var(--mainColor);
+font-weight: 600;
+}
+.buttons .Register{
+color: #fff;
+background-color: var(--mainColor); 
 }
