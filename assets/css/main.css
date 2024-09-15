@@ -4,8 +4,10 @@ body{
   background-color: hsl(0, 0%, 93%);
 }
 .header{
-background-color: white;
-padding: 18px 0;
+
+padding: 20px 5px;
+box-shadow: 0px 25px 50px;
+position: sticky;
 }
 
 .header .menu {
@@ -76,6 +78,224 @@ background-color: var(--mainColor);
         }
     
 }
+.Register{
+    padding: 10px;
+    background-color: #fff;
+    gap: 50px;
+}
+
+.start :nth-child(1){
+    color: var(--mainColor);
+
+}
+.start :nth-child(2){
+
+    font-weight: bold;
+    font-size: 50px;
+}
+.start :nth-child(3){
+    color: #969696;
+}
+
+.start{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px ;
+}
+.links {
+    display: flex;
+    
+}
+
+.links img{
+    height: 22px;
+    width: 22px;
+    padding-left: 20px;
+    padding-right: 3px;
+}
+.links :nth-child(1){
+    font-family: var(--subfont);
+    border-radius: 9px;
+    padding: 10px 50px;
+    color: #fff;
+    background-color: var(--mainColor); 
+    
+}
+
+.start .links :nth-child(2){
+margin-top: 8px;
+padding-right: 5px;
+}
+.links :nth-child(3){
+    font-family: var(--subfont);
+    font-weight: bold;
+    margin-top: 9px;
+    color:black
+    }
+
+.studing{
+    width:calc(60% - 50px);
+    
+}
+ .studing img{
+    width: 100%;
+    height: auto;
+    }
+
+
+
+ @media screen and (max-width: 1050px){
+     .Register .start{
+ width: 100% ;
+text-align: center;
+    }
+.links{
+   justify-content: center;
+}
+.studing {
+ 
+  width: 100%;
+}
+    }
+
+
+
+.prop{
+    background-color:#F5F5F5 ;
+    
+}
+.prop .row {
+ padding: 80px 0px;
+ 
+   
+}
+.intro{
+    width: calc((100% - 20px) / 3);
+    gap :15px
+
+
+}
+.intro :nth-child(1){
+    color: var(--mainColor);
+}
+
+.intro :nth-child(3){
+color: #969696;
+}
+.img-info{
+    width: calc(2 * ( (100% - 20px) / 3));
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    
+}
+
+
+.person{
+    width: calc((100% - 200px) /3);
+    background-color: var(--mainColor);
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5%;
+   
+}
+.person img {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.person :nth-child(2){
+    padding-bottom: 20px ;
+    font-family: var(--subfont);
+    font-weight: bold;
+
+}
+.person :nth-child(3){
+    color: #DDDDDD;
+}
+.arrow {
+    margin-left: auto;
+    
+}
+
+
+
+
+@media screen and (max-width: 968px){
+.prop .intro {
+text-align: center;
+width: 100%;
+}
+    
+     .person{
+    width: 100%;
+        }
+}
+
+
+
+
+
+
+.definition{
+    color:#fff ;
+    background: linear-gradient(to right, #545BE8 0%, #272DB0 100%);
+    padding: 20px;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+.left-side :nth-child(1){
+    color: #F0C932;
+}
+.down {
+    display: flex;
+    gap: 100px;
+}
+.left-side :nth-child(2){
+    font-size: 35px;
+}
+.left-side :nth-child(3){
+    font-size: 15px;
+    color:#DDDDDD
+}
+.left-side .down :nth-child(2){
+    color: #fff;
+    font-size:18px;
+}
+.right-side{
+    width: 50%;
+}
+.right-side img {
+
+    width: 100%;
+}
+
+@media screen and (max-width: 1050px){
+   .definition .right-side{
+width: 100% ;
+
+   }
+   .definition .left-side{
+    width: 100% ;
+   }
+}
+
+
 
 
 
@@ -138,6 +358,7 @@ flex-wrap: wrap;
 }
 
 .coursses{
+    padding: 20px;
     background-color: #fff;
 }
 .course-description{
@@ -181,6 +402,8 @@ flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    box-shadow: -20px 20.23719596862793px 6.23719596862793px rgba(0, 0, 0, 0.1);
+    position: relative;
 
 }
 .testimonials{
@@ -191,12 +414,22 @@ flex-wrap: wrap;
 .testimonials .row {
 gap: 40px;
 }
- h2{
+.testimonials h2{
    display: flex;
    align-items: center;
    flex-direction: column;
    margin-bottom: 30PX;
 
+}
+.testimonial::after {
+    content: '';
+position: absolute;
+top: 0;
+right: 0;
+border-top: 50px solid #F4F4F4;
+
+border-bottom: 50px solid transparent;
+border-left: 50px solid transparent;
 }
 
 
